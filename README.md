@@ -1,49 +1,93 @@
-# Simulation d'Investissement
+# Quantitative Risk Modelling
 
-Ce projet Python simule différents scénarios d'investissement avec un prêt de 200 000 € sur une période de 10 ans (18 mois de différé + 8,5 ans de remboursement).
 
-## Fonctionnalités
+## 🧠 Objectif du projet
 
-- Modélise plusieurs classes d'actifs :
-  - ETF d'actions
+Ce projet vise à modéliser et analyser les risques financiers associés à différents types d'investissements dans un cadre réaliste.  
+Il applique des techniques de **simulation de Monte Carlo**, **modélisation stochastique** et **analyse de portefeuille** pour évaluer la performance d'actifs sur une période longue avec effets de levier.
+
+
+
+## 🛠️ Fonctionnalités principales
+
+- **Modélisation de plusieurs classes d'actifs** :
+  - ETF d'actions mondiales
   - Obligations d'État
   - Immobilier locatif
-  - Cryptomonnaie
-  - Portefeuille mixte (60% actions, 40% obligations)
-- Intègre des caractéristiques réalistes du marché :
+  - Cryptomonnaies
+  - Portefeuille diversifié (60% actions, 40% obligations)
+- **Prise en compte de paramètres réalistes** :
   - Frais de transaction
-  - Implications fiscales
-  - Rendements des revenus
-  - Ajustement de l'inflation
-  - Conditions de défaut
-- Simulation de Monte Carlo avec paramètres configurables
-- Analyse complète et visualisation des résultats
+  - Impacts fiscaux
+  - Revenus locatifs / dividendes
+  - Ajustements liés à l'inflation
+  - Probabilités de défaut
+- **Simulation avancée** :
+  - 10 000 itérations de Monte Carlo
+  - Analyse statistique détaillée (moyenne, VaR, percentiles)
+  - Visualisations dynamiques des résultats (matplotlib)
+- **Génération automatique de rapports PDF personnalisés**
 
-## Installation
+---
 
-1. Clonez ce dépôt
-2. Installez les dépendances :
+## 📈 Technologies utilisées
+
+- Python 3.10
+- NumPy, Pandas, Matplotlib
+- Scikit-learn (analyses statistiques complémentaires)
+- FPDF (génération de rapports automatiques)
+
+---
+
+## 🚀 Comment utiliser le projet
+
+1. **Clonez le dépôt** :
+```bash
+git clone https://github.com/hugowalrand/quantitative-risk-modelling.git
+```
+2. **Installez les dépendances** :
 ```bash
 pip install -r requirements.txt
 ```
-
-## Utilisation
-
-Exécutez la simulation :
+3. **Lancez une simulation** :
 ```bash
-python src/investment_sim.py
+python investment_sim.py
 ```
 
-La simulation produira :
-- Paramètres initiaux du prêt
-- Métriques de performance pour chaque classe d'actifs
-- Visualisation des trajectoires de simulation et des distributions de valeurs finales
+> Le script génèrera des analyses de performance, des visualisations de risques, ainsi qu’un rapport d’investissement complet en PDF.
 
-## Paramètres
+---
 
-- Montant du prêt : 200 000 €
-- Taux d'intérêt annuel : 0,99%
-- Période de différé : 18 mois (1,5 ans)
-- Période de remboursement : 102 mois (8,5 ans)
-- Taux d'inflation annuel : 2%
-- Itérations de simulation par défaut : 10 000
+## ⚙️ Paramètres par défaut
+
+- Montant du prêt : **200 000 €**
+- Taux d’intérêt annuel : **0,99 %**
+- Période de différé : **18 mois**
+- Durée totale : **10 ans**
+- Inflation annuelle : **2 %**
+- Itérations Monte Carlo : **10 000**
+
+---
+
+## 📑 Structure du projet
+
+| Fichier | Description |
+|--------|-------------|
+| `investment_sim.py` | Simulation principale de l'évolution des investissements |
+| `generate_detailed_report.py` | Création automatique d'un rapport PDF complet |
+| `visualisations.py` | Outils de visualisation dynamique |
+| `analyse_approfondie.py` | Analyse quantitative détaillée |
+| `fiscalite.py` | Modèle fiscal simplifié |
+| `actifs_enrichis.py` | Données enrichies sur les classes d'actifs |
+
+---
+
+## 🎯 Perspective d'amélioration
+
+- Intégration de modèles de séries temporelles (ARIMA, GARCH)
+- Évaluation du risque systémique via la corrélation croisée des classes d’actifs
+- Introduction de stress testing sur scénarios macroéconomiques
+
+
+
+> 📩 N’hésitez pas à me contacter si vous souhaitez échanger sur les méthodologies employées ou sur l'application de ce projet à d'autres domaines du risk management.
