@@ -82,6 +82,22 @@ python investment_sim.py
 
 ---
 
+# Plusieurs illustrations des résultats itératifs : 
+
+<img width="1226" alt="image" src="https://github.com/user-attachments/assets/480ad259-0f94-4b6e-a97d-7135e44bb6c5" />
+
+
+
+<img width="616" alt="image" src="https://github.com/user-attachments/assets/7f84e7ee-b00d-4e6c-8a0c-e99633067b7e" />
+
+
+<img width="1180" alt="image" src="https://github.com/user-attachments/assets/f8cd7cd1-7da5-441c-87c9-bb9ea9038621" />
+
+
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/cc3e3e81-9087-4d0c-b357-9ad073ffc026" />
+
+
 ## 🎯 Perspective d'amélioration
 
 - Intégration de modèles de séries temporelles (ARIMA, GARCH)
